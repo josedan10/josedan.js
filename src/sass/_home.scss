@@ -1,0 +1,49 @@
+.home-banner {
+  background-image: url("/assets/img/home-banner.jpg");
+  color: white;
+}
+
+.about {
+
+  justify-content: center;
+  align-items: center;
+
+  p {
+      text-align: center;
+  }
+}
+
+.skill {
+
+  min-height: 70vh;
+  align-items: center;
+
+  &:nth-child(even) {
+      h2 {
+          text-align: right;
+      }
+
+      ul {
+          float: right;
+      }
+  }
+
+  ul {
+      list-style: none;
+  }
+}
+
+.service {
+
+  min-height: 70vh;
+
+  p {
+      text-align: justify;
+  }
+
+  &:nth-child(even) {
+      h2 {
+          text-align: right;
+      }
+  }
+}
