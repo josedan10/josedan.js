@@ -4,10 +4,13 @@
   "description": "A Vue.js project",
   "author": "José Daniel <josedanq100@gmail.com>",
   "private": true,
+  "wst": "/dist/",
+  "homepage": "https://josedan10.github.io/josedan.js/",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "push-dir": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
@@ -58,6 +61,7 @@
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-gh-pages": "^1.16.3",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
