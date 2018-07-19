@@ -7,7 +7,7 @@
     </div>
 
     <main id="app">
-        <section data-aos="fade-up" data-aos-duration="2000" class="about d-flex">
+        <section data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000" class="about d-flex">
             <div class="wrapper">
                 <h1 class="display-4">About Me</h1>
                 <div class="content">
@@ -48,7 +48,6 @@ export default {
   },
   data: () => {
     return {
-
     };
   }
 };

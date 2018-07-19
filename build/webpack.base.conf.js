@@ -52,7 +52,7 @@ module.exports = {
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
@@ -83,6 +83,10 @@ module.exports = {
               'css-loader', // translates CSS into CommonJS
               'sass-loader' // compiles Sass to CSS
           ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'vue-svg-loader'
       }
     ]
   },

@@ -5,7 +5,7 @@
   "author": "José Daniel <josedanq100@gmail.com>",
   "private": true,
   "wst": "/dist/",
-  "homepage": "https://josedan10.github.io/josedan.js/",
+  "homepage": "https://github.com/josedan10/josedan.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -15,6 +15,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.1",
+    "@fortawesome/free-solid-svg-icons": "^5.1.1",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "i": "^0.3.6",
+    "npm": "^6.2.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -64,6 +69,7 @@
     "vue-gh-pages": "^1.16.3",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
+    "vue-svg-loader": "^0.5.0",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
