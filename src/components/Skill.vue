@@ -3,11 +3,11 @@
 
     <div v-if="index % 2" class="row">
 
-      <figure class="wrapper col col-12 col-md-6">
+      <figure class="d-flex col col-12 col-md-6">
         <slot name="asset"></slot>
       </figure>
 
-      <div class="wrapper col col-12 col-md-6">
+      <div class="wrapper d-flex col col-12 col-md-6">
         <h2>{{name}}</h2>
         <span><em v-if="name === 'Design'" class="float-right">Open source software. Yeiii! <font-awesome-icon style="color: red;" icon="heart"></font-awesome-icon></em></span>
         <ul>
@@ -26,7 +26,7 @@
 
     <div v-else class="row">
 
-      <div class="wrapper col col-12 col-md-6">
+      <div class="wrapper d-flex col col-12 col-md-6">
         <h2>{{name}}</h2>
         <em v-if="name === 'Design'" class="float-right">Open source software. Yeiii! ❤️ <i class="fa fa-heart" style="margin-bottom: 30px; color: red;"></i></em>
         <ul>
@@ -41,7 +41,7 @@
         </ul>
       </div>
 
-      <figure class="wrapper col col-12 col-md-6">
+      <figure class="d-flex col col-12 col-md-6">
         <slot name="asset"></slot>
       </figure>
 

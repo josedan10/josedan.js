@@ -18,6 +18,23 @@
   min-height: 70vh;
   align-items: center;
 
+  svg {
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .wrapper {
+    justify-content: center;
+    flex-direction: column;
+
+    &:nth-child(even) {
+      align-items: flex-end;
+    }
+   }
+
   &:nth-child(even) {
       h2 {
           text-align: right;
