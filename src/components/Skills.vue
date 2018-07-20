@@ -112,6 +112,10 @@
                 lvl: 2
               },
               {
+                name: 'C#',
+                lvl: 1
+              },
+              {
                 name: 'Java',
                 lvl: 1
               }
