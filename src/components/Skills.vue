@@ -10,6 +10,7 @@
             <Skill :index="index" :name="skill.name" :list="skill.list">
               <FrontendAsset slot="asset" v-if="skill.name === 'Frontend'"></FrontendAsset>
               <BackendAsset slot="asset" v-else-if="skill.name === 'Backend'"></BackendAsset>
+              <ProgrammingAsset slot="asset" v-else-if="skill.name === 'Programming Languages'"></ProgrammingAsset>
             </Skill>
         </div>
     </div>
@@ -20,13 +21,15 @@
   import Skill from './Skill';
   import BackendAsset from '../assets/backend.svg';
   import FrontendAsset from './FrontendAsset';
+  import ProgrammingAsset from '../assets/programming.svg';
 
   export default {
     name: 'Skills',
     components: {
       Skill,
       BackendAsset,
-      FrontendAsset
+      FrontendAsset,
+      ProgrammingAsset
     },
     data: () => {
       return {
