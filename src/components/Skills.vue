@@ -8,7 +8,8 @@
             <!-- Render Skills  -->
 
             <Skill :index="index" :name="skill.name" :list="skill.list">
-              <BackendAsset slot="asset" v-if="skill.name === 'Backend'"></BackendAsset>
+              <FrontendAsset slot="asset" v-if="skill.name === 'Frontend'"></FrontendAsset>
+              <BackendAsset slot="asset" v-else-if="skill.name === 'Backend'"></BackendAsset>
             </Skill>
         </div>
     </div>
@@ -18,12 +19,14 @@
 <script>
   import Skill from './Skill';
   import BackendAsset from '../assets/backend.svg';
+  import FrontendAsset from './FrontendAsset';
 
   export default {
     name: 'Skills',
     components: {
       Skill,
-      BackendAsset
+      BackendAsset,
+      FrontendAsset
     },
     data: () => {
       return {
@@ -45,7 +48,7 @@
               },
               {
                 name: 'Vue.js',
-                lvl: 2
+                lvl: 3
               },
               {
                 name: 'React Native',
