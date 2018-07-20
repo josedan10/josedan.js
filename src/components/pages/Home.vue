@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Nav></Nav>
-
     <div class="banner home-banner d-flex">
         <h1 class="display-4">Hello World!</h1>
     </div>
@@ -35,14 +33,12 @@
 </template>
 
 <script>
-import Nav from './Nav';
-import Skills from './Skills';
-import Services from './Services';
+import Skills from '../Skills';
+import Services from '../Services';
 
 export default {
   name: 'Home',
   components: {
-    Nav,
     Skills,
     Services
   },
@@ -53,7 +49,3 @@ export default {
 };
 
 </script>
-
-<style lang="scss">
-  @import '../sass/main.scss';
-</style>

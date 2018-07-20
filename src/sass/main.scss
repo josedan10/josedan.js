@@ -1,6 +1,7 @@
 // General styles
 
 @import '_colors';
+@import "~bootstrap/scss/bootstrap";
 
 * {
     padding: 0;
@@ -10,6 +11,10 @@
 
 html {
   overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
 }
 
 main {
@@ -30,10 +35,6 @@ h4 {
 
     align-items: center;
     position: relative;
-}
-
-nav * {
-    color: $secondary_color;
 }
 
 section {

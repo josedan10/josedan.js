@@ -9,7 +9,7 @@
 
       <div class="wrapper col col-12 col-md-6">
         <h2>{{name}}</h2>
-        <em v-if="name === 'Design'" class="float-right">Open source software. Yeiii! <i class="fa fa-heart" style="margin-bottom: 30px; color: red;"></i></em>
+        <span><em v-if="name === 'Design'" class="float-right">Open source software. Yeiii! <font-awesome-icon style="color: red;" icon="heart"></font-awesome-icon></em></span>
         <ul>
           <li v-bind:key="item.name" v-for="item in list">
             {{ item.name }}
@@ -28,7 +28,7 @@
 
       <div class="wrapper col col-12 col-md-6">
         <h2>{{name}}</h2>
-        <em v-if="name === 'Design'" class="float-right">Open source software. Yeiii! <i class="fa fa-heart" style="margin-bottom: 30px; color: red;"></i></em>
+        <em v-if="name === 'Design'" class="float-right">Open source software. Yeiii! ❤️ <i class="fa fa-heart" style="margin-bottom: 30px; color: red;"></i></em>
         <ul>
           <li v-bind:key="item.name" v-for="item in list">
             {{ item.name }}
