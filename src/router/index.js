@@ -17,5 +17,11 @@ export default new Router({
       path: '/Contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '*',
+      name: 'Error404',
+      component: Error404
     }
+  ]
 });
