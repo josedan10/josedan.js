@@ -1,5 +1,8 @@
 <template>
-  Error 404 Page Not Found :c
+  <div>
+
+    Error 404 Page Not Found :c
+  </div>
 </template>
 
 <script>
