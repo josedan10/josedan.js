@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container d-flex">
 
     <div v-if="index % 2" class="row">
 
       <figure class="wrapper col col-12 col-md-6">
-        <slot name="asset" ></slot>
+        <slot name="asset"></slot>
       </figure>
 
       <div class="wrapper col col-12 col-md-6">
@@ -42,7 +42,7 @@
       </div>
 
       <figure class="wrapper col col-12 col-md-6">
-        <slot name="asset" ></slot>
+        <slot name="asset"></slot>
       </figure>
 
     </div>
