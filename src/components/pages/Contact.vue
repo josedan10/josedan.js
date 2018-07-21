@@ -5,12 +5,44 @@
     </div>
 
     <main id="app">
-        <section class="about d-flex">
-            <div class="wrapper">
-                <div class="content">
-                    <p>Let me know how I can help you. Send me an email and I’ll answer you as soon as possible. <span style="color: #ffe500;">😉</span></p>
-                </div>
-            </div>
+        <section class="contact container">
+          <div class="row">
+            <h3 class="col-12">Let me know how I can help you. Send me an email and I’ll answer you as soon as possible. <span style="color: #ffe500;">😉</span></h3>
+          </div>
+
+          <div class="row d-flex content-form">
+              <div class="d-flex col col-12 col-md-6 form-container">
+                <form class="col col-12" action="" method="post">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="José Daniel" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="your-email@mail.com" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input class="form-control" type="tel" id="phone" name="phone" placeholder="+584444444444" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="msg">Message</label>
+                    <textarea class="form-control" name="msg" id="msg" placeholder="Text here..." required></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Send" />
+                  </div>
+                </form>
+              </div>
+
+              <figure class="asset-container col col-12 col-md-6">
+                <CodingAsset />
+              </figure>
+          </div>
         </section>
     </main>
 
@@ -19,12 +51,13 @@
 
 <script>
   import Nav from '../Nav';
-  // import Form from '../Form';
+  import CodingAsset from '../../assets/coding.svg';
 
   export default {
     name: 'Contact',
     components: {
-      Nav
+      Nav,
+      CodingAsset
     }
   };
 

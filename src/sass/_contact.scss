@@ -1,0 +1,26 @@
+.contact {
+
+  .content-form {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .form-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+
+    textarea {
+      resize: none;
+    }
+    .form-control {
+      width: 100%;
+    }
+  }
+
+  svg {
+    width: 100%;
+  }
+}
