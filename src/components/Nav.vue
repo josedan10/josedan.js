@@ -9,7 +9,10 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li v-bind:key="link" v-for="link in links" >
+              <b-link class="nav-link" :to="(link === 'Home') ? '/' : `/${link}`" exact>{{link}}</b-link>
+            </li>
+            <!-- <li class="nav-item active">
                 <router-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></router-link>
             </li>
             <li class="nav-item">
@@ -17,7 +20,7 @@
             </li>
             <li class="nav-item">
                 <router-link class="nav-link" to="/Contact">Contact</router-link>
-            </li>
+            </li> -->
         </ul>
     </div>
   </nav>
@@ -30,7 +33,8 @@
     name: 'Nav',
     data: () => {
       return {
-        logo: logo
+        logo: logo,
+        links: ['Home', 'Portfolio', 'Contact']
       };
     }
   };

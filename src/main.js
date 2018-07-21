@@ -13,6 +13,9 @@ import 'bootstrap';
 // Vue Components
 import App from './App';
 import router from './router';
+import BootstrapVue from 'bootstrap-vue';
+
+Vue.use(BootstrapVue);
 
 AOS.init();
 
