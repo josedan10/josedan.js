@@ -1,4 +1,16 @@
+$font_path: '~@/assets/fonts/';
+$img_path: '~@/assets/';
+
 // General styles
+@font-face {
+  font-family: CamingoCode-Reg;
+  src: url($font_path + 'CamingoCode-Regular.ttf');
+}
+
+@font-face {
+  font-family: CamingoCode-Bold;
+  src: url($font_path + 'CamingoCode-Bold.ttf');
+}
 
 @import '_colors';
 @import "~bootstrap/scss/bootstrap";
@@ -7,11 +19,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'CamingoCode-Reg', Arial, Helvetica, sans-serif;
 }
 
 html,
 body {
-  overflow-x: hidden;
   width: 100vw;
 }
 
@@ -20,14 +32,16 @@ body {
 }
 
 main {
-    padding: 0 10%;
+  padding: 0 10%;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  font-family: CamingoCode-Bold, Arial, Helvetica, sans-serif;
 }
 
 .banner {
@@ -41,27 +55,41 @@ h4 {
 
 section {
 
-    padding: 50px 0;
-    min-height: 100vh;
+  padding: 50px 0;
+  min-height: 100vh;
 
-    h1 {
-        text-decoration: underline;
-        text-align: center;
-    }
+  h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: $primary_color;
+  }
 
-    h2 {
-        color: $primary_color;
-    }
+    // h2 {
+    //     color: $primary_color;
+    // }
 }
 
 hr {
-    border-color: rgb(117, 117, 117);
+  border-color: rgba($color: $primary_color, $alpha: 0.7);
 }
 
-// Router links
-.router-link-exact-active {
-  color: rgba(0, 0, 0, 0.9);
+nav {
+  .logo {
+    width: 50px;
+  }
+
+
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: $primary_color;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba($color: $primary_color, $alpha: 0.7);
 }
 
 @import 'home';
+@import 'contact';
 @import 'error404';
+@import 'responsive';

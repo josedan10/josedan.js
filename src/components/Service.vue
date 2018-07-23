@@ -5,9 +5,7 @@
 
         <div class="content col col-12 col-md-6">
           <h2>{{ title }}</h2>
-          <p :html="paragraph" v-bind:key="index" v-for="(paragraph, index) in content">
-            {{ paragraph }}
-          </p>
+          <p v-html="paragraph" v-bind:key="index" v-for="(paragraph, index) in content"></p>
         </div>
 
         <figure class="col col-12 col-md-6">
@@ -25,9 +23,7 @@
 
         <div class="content col col-12 col-md-6">
           <h2>{{ title }}</h2>
-          <p :html="paragraph" v-bind:key="index" v-for="(paragraph, index) in content">
-            {{ paragraph }}
-          </p>
+          <p v-html="paragraph" v-bind:key="index" v-for="(paragraph, index) in content"></p>
         </div>
 
       </div>

@@ -11,6 +11,7 @@
               <FrontendAsset slot="asset" v-if="skill.name === 'Frontend'"></FrontendAsset>
               <BackendAsset slot="asset" v-else-if="skill.name === 'Backend'"></BackendAsset>
               <ProgrammingAsset slot="asset" v-else-if="skill.name === 'Programming Languages'"></ProgrammingAsset>
+              <img slot="asset" src="../assets/Nazly.jpg" alt="design" v-else-if="skill.name === 'Design'" />
             </Skill>
         </div>
     </div>

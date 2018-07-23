@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faHeart, faSmileWink } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHeart, faSmileWink, faEnvelope, faMobileAlt, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 // Styles and animations
@@ -21,7 +21,7 @@ AOS.init();
 
 Vue.config.productionTip = false;
 
-library.add(faBars, faHeart, faSmileWink);
+library.add(faBars, faHeart, faSmileWink, faEnvelope, faMobileAlt, faGlobe);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

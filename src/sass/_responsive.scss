@@ -1,0 +1,15 @@
+@include media-breakpoint-up(md) {
+  .service:nth-child(even),
+  .skill:nth-child(even) {
+    padding: 0;
+
+    figure {
+      order: 1;
+    }
+
+    .wrapper,
+    .content {
+      order: 2;
+    }
+  }
+}

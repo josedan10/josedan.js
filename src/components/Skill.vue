@@ -17,7 +17,7 @@
             <b v-else-if="item.lvl === 2" class="text-primary">(Intermediate)</b>
             <b v-else class="text-warning">(Basic)</b>
 
-            <small v-if="item.small !== undefined">{{ item.small }}</small>
+            <small class="d-none d-lg-block" v-if="item.small !== undefined">{{ item.small }}</small>
           </li>
         </ul>
       </div>
@@ -36,7 +36,7 @@
             <b v-else-if="item.lvl === 2" class="text-primary">(Intermediate)</b>
             <b v-else class="text-warning">(Basic)</b>
 
-            <small v-if="item.small !== undefined">{{ item.small }}</small>
+            <small class="d-none d-lg-block" v-if="item.small !== undefined">{{ item.small }}</small>
           </li>
         </ul>
       </div>
