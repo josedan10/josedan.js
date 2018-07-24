@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
 
-    <div>
+    <div style="width: 100%;">
       <div class="banner home-banner d-flex">
           <h1 class="display-4">Hello World!</h1>
       </div>

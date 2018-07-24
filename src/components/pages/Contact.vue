@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
 
-    <div>
+    <div style="width: 100%">
       <div class="banner contact-banner d-flex">
           <h1 class="display-4">Contact</h1>
       </div>
@@ -26,7 +26,7 @@
               <figure class="asset-container col col-12 col-md-6">
                 <CodingAsset />
 
-                <div class="cloud-container d-flex">
+                <div class="cloud-container">
                   <Cloud />
                   <Circle1 />
                   <Circle2 />

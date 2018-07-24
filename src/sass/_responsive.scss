@@ -7,9 +7,33 @@
       order: 1;
     }
 
+    h2 {
+      text-align: right;
+    }
+
+    ul {
+      float: right;
+    }
+
     .wrapper,
     .content {
       order: 2;
+    }
+
+    .wrapper {
+        align-items: flex-end;
+    }
+
+  }
+
+  .service:nth-child(odd),
+  .skill:nth-child(odd) {
+    h2 {
+      text-align: left;
+    }
+
+    .wrapper {
+      align-items: flex-start;
     }
   }
 
@@ -18,6 +42,6 @@
   }
 
   main {
-    padding: 0 20%;
+    padding: 0 10%;
   }
 }
