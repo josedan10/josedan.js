@@ -28,13 +28,16 @@ body,
   width: 100vw;
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(241, 241, 241);
 }
 
 main {
   padding: 0 5%;
-  overflow-x: hidden;
 }
 
 h1,
