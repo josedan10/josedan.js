@@ -25,12 +25,14 @@ $img_path: '~@/assets/';
 html,
 body,
 #app {
-  width: 100vw;
+  width: 100%;
 }
 
-#app {
-  overflow-x: hidden;
-}
+// #app,
+// .services,
+// .skills {
+//   overflow: hidden;
+// }
 
 body {
   background-color: rgb(241, 241, 241);
@@ -49,9 +51,11 @@ h4 {
 }
 
 .banner {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 50px;
+
+    overflow: hidden;
 
     align-items: center;
     position: relative;
