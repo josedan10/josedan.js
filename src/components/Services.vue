@@ -53,7 +53,7 @@
     data: () => {
       return {
         webDesign: [
-          'Using different design techniques and UX / UI I can design a website that meets the requirements you request. Websites completely resposives for a better presentation and professionalism. Through the different mockups you can see how your website will be displayed on different devices.'
+          'Using different design techniques and UX / UI I can design a website that meets the requirements you request. Websites completely responsives for a better presentation and professionalism. Through the different mockups you can see how your website will be displayed on different devices.'
         ],
         mobileApps: [
           'You can have your own native apps for Android and iOS.<em>OH, YEAAH!</em> D:',
