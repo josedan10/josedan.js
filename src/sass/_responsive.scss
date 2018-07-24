@@ -24,6 +24,10 @@
         align-items: flex-end;
     }
 
+    p {
+      text-align: right;
+    }
+
   }
 
   .service:nth-child(odd),
@@ -34,6 +38,10 @@
 
     .wrapper {
       align-items: flex-start;
+    }
+
+    p {
+      text-align: left;
     }
   }
 

@@ -3,7 +3,7 @@
 
     <div v-if="index % 2" class="row">
 
-      <figure class="d-flex col col-12 col-md-6">
+      <figure class="col col-12 col-md-6">
         <slot name="asset"></slot>
       </figure>
 
@@ -41,7 +41,7 @@
         </ul>
       </div>
 
-      <figure class="d-flex col col-12 col-md-6">
+      <figure class="col col-12 col-md-6">
         <slot name="asset"></slot>
       </figure>
 
