@@ -32,7 +32,38 @@
     }
   }
 
-  svg {
+  .meCoding {
     width: 100%;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  .cloud-container {
+    width: 28%;
+    position: absolute;
+
+    top: 0;
+    right: 20%;
+
+    .cloud {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .circle1 {
+      width: 30%;
+      position: absolute;
+      top: 40%;
+      right: 47%;
+    }
+
+    .circle2 {
+      width: 22%;
+      position: absolute;
+      right: 25%;
+      top: 47%;
+    }
   }
 }

@@ -6,7 +6,7 @@
           <h1 class="display-4">Hello World!</h1>
       </div>
 
-      <main id="app">
+      <main>
           <section data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000" class="about d-flex">
               <div class="wrapper">
                   <h1 class="display-4">About Me</h1>

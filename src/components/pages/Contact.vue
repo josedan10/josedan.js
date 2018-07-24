@@ -6,7 +6,7 @@
           <h1 class="display-4">Contact</h1>
       </div>
 
-      <main id="app">
+      <main>
           <section class="contact container">
             <div class="row">
               <h3 class="col-12">Let me know how I can help you. Send me an email and I’ll answer you as soon as possible. <span style="color: #290058;">😉</span></h3>
@@ -25,6 +25,12 @@
 
               <figure class="asset-container col col-12 col-md-6">
                 <CodingAsset />
+
+                <div class="cloud-container d-flex">
+                  <Cloud />
+                  <Circle1 />
+                  <Circle2 />
+                </div>
               </figure>
             </div>
           </section>
@@ -37,12 +43,18 @@
 <script>
   import Nav from '../Nav';
   import CodingAsset from '../../assets/coding.svg';
+  import Cloud from '../../assets/cloud.svg';
+  import Circle1 from '../../assets/circle1.svg';
+  import Circle2 from '../../assets/circle2.svg';
 
   export default {
     name: 'Contact',
     components: {
       Nav,
-      CodingAsset
+      CodingAsset,
+      Cloud,
+      Circle1,
+      Circle2
     }
   };
 
