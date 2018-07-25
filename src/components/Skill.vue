@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex">
+  <div class="container-fluid">
 
     <div v-if="index % 2" class="row">
 
@@ -41,7 +41,7 @@
         </ul>
       </div>
 
-      <figure class="col col-12 col-md-6">
+      <figure class="mx-auto col col-12 col-md-6">
         <slot name="asset"></slot>
       </figure>
 
