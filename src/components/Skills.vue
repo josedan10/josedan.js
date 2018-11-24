@@ -11,7 +11,7 @@
               <FrontendAsset slot="asset" v-if="skill.name === 'Frontend'"></FrontendAsset>
               <BackendAsset slot="asset" v-else-if="skill.name === 'Backend'"></BackendAsset>
               <ProgrammingAsset slot="asset" v-else-if="skill.name === 'Programming Languages'"></ProgrammingAsset>
-              <img class="mx-auto img-fluid" slot="asset" src="../assets/Nazly.jpg" alt="design" v-else-if="skill.name === 'Design'" />
+              <DesignAsset class="mx-auto img-fluid" slot="asset" v-else-if="skill.name === 'Design'" />
             </Skill>
         </div>
     </div>
@@ -23,6 +23,7 @@
   import BackendAsset from '../assets/backend.svg';
   import FrontendAsset from './FrontendAsset';
   import ProgrammingAsset from '../assets/programming.svg';
+  import DesignAsset from '../assets/pi-zza.svg';
 
   export default {
     name: 'Skills',
@@ -30,7 +31,8 @@
       Skill,
       BackendAsset,
       FrontendAsset,
-      ProgrammingAsset
+      ProgrammingAsset,
+      DesignAsset
     },
     data: () => {
       return {
@@ -68,6 +70,14 @@
                 lvl: 2
               },
               {
+                name: 'Node',
+                lvl: 2
+              },
+              {
+                name: 'MongoDB',
+                lvl: 2
+              },
+              {
                 name: 'Codeigniter',
                 lvl: 2
               },
@@ -78,6 +88,10 @@
               {
                 name: 'SQL Server',
                 lvl: 2
+              },
+              {
+                name: 'GraphQL',
+                lvl: 1
               },
               {
                 name: 'Ruby on Rails',

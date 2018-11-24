@@ -85,6 +85,10 @@ nav {
 
 }
 
+.d-grid {
+  display: grid;
+}
+
 .navbar-light .navbar-nav .nav-link.active {
   color: $primary_color;
 }
@@ -98,3 +102,4 @@ nav {
 @import 'error404';
 @import 'responsive';
 @import 'animations';
+@import 'portfolio';
