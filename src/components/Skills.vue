@@ -66,15 +66,19 @@
             name: 'Backend',
             list: [
               {
-                name: 'Laravel',
-                lvl: 2
-              },
-              {
                 name: 'Node',
-                lvl: 2
+                lvl: 3
               },
               {
                 name: 'MongoDB',
+                lvl: 3
+              },
+              {
+                name: 'GraphQL',
+                lvl: 3
+              },
+              {
+                name: 'Laravel',
                 lvl: 2
               },
               {
@@ -88,10 +92,6 @@
               {
                 name: 'SQL Server',
                 lvl: 2
-              },
-              {
-                name: 'GraphQL',
-                lvl: 1
               },
               {
                 name: 'Ruby on Rails',
